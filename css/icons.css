@@ -62,3 +62,12 @@
 .icon-map-marker:before {
   content: "\69";
 }
+.icon-linkedin-square:before {
+  content: "\63";
+}
+.icon-github-square:before {
+  content: "\6a";
+}
+.icon-codepen:before {
+  content: "\6b";
+}
