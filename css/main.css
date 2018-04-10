@@ -152,6 +152,13 @@ h3 {
   }
 }
 
+@media (min-width: 100em) {
+  .container {
+    margin-left: 10%;
+    width: 55%;
+  }
+}
+
 @media print {
   .container {
     width: 100%;
