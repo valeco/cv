@@ -137,7 +137,7 @@ h3 {
 @media (min-width: 33em) {
   body {
     background-position: right bottom;
-    background-size: 19em;
+    background-size: auto 90%;
   }
   
   .container {
