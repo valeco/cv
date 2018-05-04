@@ -26,6 +26,10 @@ abbr[title] {
   text-decoration: none;
 }
 
+ul {
+  margin-top: .5em;
+}
+
 li {
   margin-bottom: .5em;
 }
@@ -41,6 +45,7 @@ h1 {
 
 h3 {
   margin-top: 1.8em;
+  margin-bottom: .5em;
 }
 
 h1,
