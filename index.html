@@ -39,7 +39,7 @@
     
       <h3>Education</h3>
       <ul>
-        <li><span class="list__date">2013 - Present</span> · <strong>Information Systems Engineering</strong> (<abbr title="Grade Point Average">GPA</abbr>: 7.89)<br> @ Universidad Tecnológica Nacional - Facultad Regional C. del Uruguay (<abbr title="Universidad Tecnológica Nacional - Facultad Regional Concepción del Uruguay">UTN FRCU</abbr>)</li>
+        <li><span class="list__date">2013 - Present</span> · <strong>Information Systems Engineering</strong> (<abbr title="Grade Point Average">GPA</abbr>: 7.89)<br> @ Universidad Tecnológica Nacional - Facultad Regional Concepción del Uruguay (<abbr title="Universidad Tecnológica Nacional - Facultad Regional Concepción del Uruguay">UTN FRCU</abbr>)</li>
         <li><span class="list__date">2006 - 2012</span> · <strong>Electromechanical Technician</strong> (<abbr title="Grade Point Average">GPA</abbr>: 8.37)<br> @ Escuela de Educación Tecnológica N° 2 "Pbro. José María Colombo"</li>
         <li><span class="list__date">2008</span> · <strong>Computer Repair Technician</strong><br> @ Instituto Argentino de Computación</li>
       </ul>
@@ -47,14 +47,14 @@
       <h3>Activities</h3>
       <ul>
         <li>I'm a <strong>student counselor</strong> and a <strong>motivational tutor</strong> at Information System Engineering Department.</li>
-        <li>I'm a member of Local Organizing Committee for the <em><abbr title="Seminario Argentina - Brasil de Tecnologías de la Información y la Comunicación">SABTIC</abbr> 2018</em>.</li>
+        <li>I'm a member of <em>Local Organizing Committee</em> for the <abbr title="Seminario Argentina - Brasil de Tecnologías de la Información y la Comunicación">SABTIC</abbr> 2018.</li>
         <li>I'm part of <em>FRCU Dev</em>, a group of developers from <abbr title="Universidad Tecnológica Nacional - Facultad Regional Concepción del Uruguay">UTN FRCU</abbr>.</li>
         <li>I was a <strong>student researcher</strong> (as a scholarship holder) in the <em>Data Mining project</em> at the <em>Database Research Group</em> of <abbr title="Universidad Tecnológica Nacional - Facultad Regional Concepción del Uruguay">UTN FRCU</abbr>.</li>
         <li>I gave a talk called "Making an app for the curriculum" at the <em>II Jornada de Prácticas Supervisadas</em> of <abbr title="Universidad Tecnológica Nacional - Facultad Regional Concepción del Uruguay">UTN FRCU</abbr>.</li>
         <li>Some of my classmates and I wrote a paper titled "Mobile app-oriented business and their implementation" for the <abbr title="Congreso Nacional de Ingeniería en Informática / Sistemas de Información">CONAIISI</abbr> 2016.</li>
-        <li>I attended <em>Escuela de Ciencias Informáticas 2016</em> in Buenos Aires.</li>
-        <li>I attended <em>Campus Party Argentina #1 (2016)</em> in Buenos Aires.</li>
-        <li>I participated in a hackathon during de <em>Global Entrepreneurship Week</em> (2017) in Paraná, Entre Ríos.</li>
+        <li>I attended <em>Escuela de Ciencias Informáticas (2016)</em> in the <abbr title="University of Buenos Aires">UBA</abbr>, Buenos Aires.</li>
+        <li>I attended <em>Campus Party Argentina #1 (2016)</em> and <em>#2 (2018)</em> in Tecnópolis, Buenos Aires.</li>
+        <li>I participated in a hackathon during the <em>Global Entrepreneurship Week</em> (2017) in Paraná, Entre Ríos.</li>
       </ul>
       <p class="logos">
         <a class="logos__item"><img src="img/logo_frcu-dev.png" alt="FRCU Dev logo"></a>
@@ -65,6 +65,7 @@
       <ul>
         <li>Web standards, usability, accessibility, user experience</li>
         <li>Design, branding (Photoshop, Inkscape, GIMP)</li>
+        <li>Linux (my main OS), free and open-source software</li>
         <li>English language and culture</li>
         <li>Education, entrepreneurship and personal development</li>
         <li>Amateur running</li>
@@ -72,7 +73,7 @@
     
       <h3>Personal info</h3>
       <ul class="list--personal-info">
-        <li><i class="icon-calendar"></i><em>Date of birth:</em> May 15, 1994 (23 years old)</li>
+        <li><i class="icon-calendar"></i><em>Date of birth:</em> May 15, 1994 (<span class="age">23</span> years old)</li>
         <li><i class="icon-globe"></i><em>Place of birth:</em> Gualeguaychú, Entre Ríos, Argentina</li>
         <li><i class="icon-home"></i><em>Place of residence:</em> Concepción del Uruguay, Entre Ríos, Argentina</li>
         <li><i class="icon-map-marker"></i><em>Address:</em> 678 Juan D. Perón St., Apt. 1D</li>
@@ -99,6 +100,17 @@
 
     ga('create', 'UA-105524338-1', 'auto');
     ga('send', 'pageview');
+
+    function getAge(dateString) {
+      const today = new Date();
+      const birthDate = new Date(dateString);
+      let age = today.getFullYear() - birthDate.getFullYear();
+      let m = today.getMonth() - birthDate.getMonth();
+      if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) age--;
+      return age;
+    }
+
+    document.querySelector('.age').textContent = getAge('1994/05/15');
   </script>
 </body>
 </html>
