@@ -88,6 +88,14 @@ h3 {
   left: -1.7em;
 }
 
+.list__job-description {
+  margin: 0;
+  color: #999;
+  font-size: .9em;
+  border-left: .3em solid #ffe07c;
+  padding: .2em 1.3em;
+}
+
 .logos {
   padding-left: 2.6em;
   margin-top: 1.5em;
@@ -157,7 +165,7 @@ h3 {
   .container {
     margin-top: 0;
     width: 70%;
-    padding: 2em 4em;
+    padding: 4em 7em;
     box-shadow: 3px 0 0 rgba(0, 0, 0, .1);
   }
 
@@ -182,7 +190,12 @@ h3 {
 }
 
 @media print {
+  body {
+    font-size: .8em;
+  }
+
   .container {
+    padding: 1em 2em;
     width: 100%;
   }
 }

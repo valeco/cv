@@ -68,6 +68,9 @@
 .icon-github-square:before {
   content: "\6a";
 }
-.icon-codepen:before {
+.icon-twitter-square:before {
+  content: "\6c";
+}
+.icon-print:before {
   content: "\6b";
 }
