@@ -194,8 +194,17 @@ h3 {
     font-size: .8em;
   }
 
+  footer {
+    display: none;
+  }
+
   .container {
     padding: 1em 2em;
+    margin: 0;
     width: 100%;
+  }
+
+  .list--personal-info li em {
+    display: inline;
   }
 }
