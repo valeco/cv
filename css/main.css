@@ -31,7 +31,7 @@ ul {
 }
 
 li {
-  margin-bottom: .5em;
+  margin-bottom: .7em;
 }
 
 h1 {
@@ -80,7 +80,12 @@ h3 {
 }
 
 .list__date {
-  color: #777;
+  background-color: #eee;
+  display: table;
+  font-size: .8em;
+  padding: .2em .7em;
+  margin-right: .3em;
+  vertical-align: middle;
 }
 
 .list__date--range {
@@ -181,6 +186,10 @@ h3 {
   body {
     background-position: right bottom;
     background-size: auto 90%;
+  }
+
+  .list__date {
+    display: inline;
   }
   
   .container {
