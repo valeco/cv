@@ -140,13 +140,12 @@ h3 {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  /* padding: 0; */
 }
 
 .list--skills li {
   background-color: #ffe07c;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: .9em;
+  font-family: monospace;
+  font-size: 1em;
   padding: .2em .7em;
   margin: 0 .5em .5em 0;
   color: #333;
